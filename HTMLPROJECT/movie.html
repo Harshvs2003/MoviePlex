@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Plex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="color: red;">Movie Plex</h1>
+            
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </nav>
+                <div class="search-login">
+                    <input type="text" placeholder="Search...">
+                    <div class="user">
+                        <img src="user-icon.png" alt="User Icon">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+           
+            
+        </header>
+        <main>
+            <div id="movie-grid" class="movie-grid">
+                <!-- 10 movie posters initially -->
+                <div class="movie-poster" onclick="showDetails('Eternals')">
+                    <img src="Eternals.jpg" alt="Eternals">
+                    <p>Eternals</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Joker')">
+                    <img src="Joker.jpg" alt="Joker">
+                    <p>Joker</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('John Wick')">
+                    <img src="John Wick.webp" alt="">
+                    <p>John Wick</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Multiverse of Madness')">
+                    <img src="Multiverse of Madness.webp" alt="Multiverse of Madness">
+                    <p>Multiverse of Madness</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Spider-Man No Way Home')">
+                    <img src="Spider-Man NWH.jpg" alt="Spider-Man No Way Home">
+                    <p>Spider-Man No Way Home</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Shang-Chi')">
+                    <img src="Shang-Chi.webp" alt="Shang-Chi">
+                    <p>Shang-Chi</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('The NUN')">
+                    <img src="The NUN.jpg" alt="The NUN">
+                    <p>The NUN</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('The Marvels')">
+                    <img src="The Marvels.jpg" alt="The Marvels">
+                    <p>The Marvels</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Thor')">
+                    <img src="Thor.webp" alt="Thor">
+                    <p>Thor</p>
+                </div>
+                <div class="movie-poster" onclick="showDetails('Avengers Endgame')">
+                    <img src="Avengers Endgame.jpg" alt="Avengers Endgame">
+                    <p>Avengers Endgame</p>
+                </div>
+            </div>
+           
+        </main>
+        <div id="movie-details" class="movie-details">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <div id="details-content"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
